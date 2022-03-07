@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="50dp"
+            android:text="Ejercicios"
+            android:textAlignment="center"
+            android:textColor="@color/material_on_surface_emphasis_medium"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/btnEj1"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/btnEj2"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@android:dimen/notification_large_icon_height"
+
+            android:text="Ejercicio 1"
+            android:onClick="irEjercicio1"/>
+
+        <Button
+            android:id="@+id/btnEj2"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@android:dimen/notification_large_icon_height"
+
+            android:text="Ejercicio 2"
+            android:onClick="irEjercicio2"
+            />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

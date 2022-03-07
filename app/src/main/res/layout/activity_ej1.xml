@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ej1">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:text="Calculo de Comision"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/material_on_surface_emphasis_medium"/>
+
+    <EditText
+        android:id="@+id/editNombre"
+        android:layout_below="@+id/titulo"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Nombre"
+        android:layout_marginTop="20dp"
+        android:inputType="textPersonName"
+        />
+    <EditText
+        android:id="@+id/editCodigo"
+        android:layout_below="@+id/editNombre"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Codigo Empleado "
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        />
+    <EditText
+        android:id="@+id/editFecha"
+        android:layout_below="@+id/editCodigo"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Mes de Venta "
+        android:layout_marginTop="20dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editMonto"
+        android:layout_below="@+id/editFecha"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Total de Venta "
+        android:layout_marginTop="20dp"
+        android:inputType="numberDecimal"/>
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_below="@+id/editMonto"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="calcular"
+        android:layout_marginTop="20dp"
+        android:onClick="enviarDatos"/>
+
+</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

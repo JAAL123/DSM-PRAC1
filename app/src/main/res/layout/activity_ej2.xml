@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ej2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:text="Ecuacion Cuadratica"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/material_on_surface_emphasis_medium"/>
+        <TextView
+            android:id="@+id/subTitulo"
+            android:layout_below="@+id/titulo"
+            android:layout_centerHorizontal="true"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="Ingrese los terminos de la ecuacion"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+        <TableRow
+            android:id="@+id/t1"
+            android:layout_below="@+id/subTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+           <TextView
+            android:layout_column="0"
+            android:layout_width="wrap_content"
+            android:padding="3dip"
+            android:text="Termino cuadratico:  "
+               android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etA"
+                android:layout_column="1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:inputType="number"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/t2"
+            android:layout_below="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_column="0"
+                android:layout_width="wrap_content"
+                android:padding="3dip"
+                android:text="Termino lineal:  "
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etB"
+                android:layout_column="1"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:inputType="number"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/t3"
+            android:layout_below="@+id/t2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_column="0"
+                android:layout_width="wrap_content"
+                android:padding="3dip"
+                android:text="Termino Independiente:  "
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etC"
+                android:layout_column="1"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:inputType="number"/>
+        </TableRow>
+        <TextView
+            android:id="@+id/solTitulo"
+            android:layout_below="@+id/btnCalcular"
+            android:layout_centerHorizontal="true"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:textAlignment="center"
+            android:text="Soluciones de la ecuacion"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"/>
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_below="@+id/t3"
+            android:layout_centerHorizontal="true"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="Calcular"
+            android:onClick="Calcular"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/s1"
+            android:layout_below="@+id/solTitulo"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:id="@+id/s2"
+            android:layout_below="@+id/s1"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+           />
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
